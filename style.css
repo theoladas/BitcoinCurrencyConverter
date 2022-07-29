@@ -91,4 +91,26 @@ label {
   color: black;
   transform: translate(0.2rem, 0.2rem);
   box-shadow: 0px 0px white;
+}
+
+@media screen and (max-width: 768px) {
+  #currency-converter {
+    max-width: 70%;
+  }
+  #currency-converter .form-title {
+    font-size: 1.5rem;
+    margin-top: -1rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  #currency-converter {
+    max-width: 90%;
+  }
+  #currency-converter .price-container {
+    font-size: 1.25rem;
+  }
+  #currency-converter #convert-btn {
+    font-size: 1rem;
+    padding: 5px 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

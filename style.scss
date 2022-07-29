@@ -109,3 +109,27 @@ label {
     }
   }
 }
+
+// Responsive iPad
+@media screen and (max-width: 768px) {
+  #currency-converter {
+    max-width: 70%;
+    .form-title {
+      font-size: 1.5rem;
+      margin-top: -1rem;
+    }
+  }
+}
+// Responsive Mobile
+@media screen and (max-width: 410px) {
+  #currency-converter {
+    max-width: 90%;
+    .price-container {
+      font-size: 1.25rem;
+    }
+    #convert-btn {
+      font-size: 1rem;
+      padding: 5px 15px;
+    }
+  }
+}
