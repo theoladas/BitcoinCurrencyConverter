@@ -1,0 +1,37 @@
+// Base Styles
+$border: 2px solid black;
+$text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.05),
+  0 4px 4px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.05),
+  0 16px 16px rgba(0, 0, 0, 0.05);
+$box-shadow: 0 4px 8px 0 rgba(170, 168, 168, 0.2),
+  0 6px 20px 0 rgba(65, 63, 63, 0.19);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e29832;
+  // background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-bottom: 0.2rem;
+}
