@@ -16,5 +16,44 @@
     <link rel="stylesheet" href="style.css" />
     <title>Bitcoin Currency Converter</title>
   </head>
-  <body></body>
+  <body>
+    <main class="container">
+      <!-- Form -->
+      <form id="currency-converter" class="container">
+        <!-- Form Title -->
+        <h1 class="form-title">Converter Currency</h1>
+        <div class="amount-currency-content flex">
+          <!-- Amount Container -->
+          <div class="amount-container flex-column">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" value="1" min="0" />
+          </div>
+          <!-- Currency Container -->
+          <div class="currency-container flex-column">
+            <label for="currency">Currency</label>
+            <select name="currency" id="currency">
+              <option value="GBP" selected>GBP</option>
+              <option value="EUR">EUR</option>
+              <option value="USD">USD</option>
+              <option value="JPY">JPY</option>
+              <option value="CNY">CNY</option>
+            </select>
+          </div>
+          <!-- Equals Container -->
+          <div class="equals-container">
+            <p>equals</p>
+          </div>
+        </div>
+        <!-- Price Container -->
+        <div class="price-container">
+          <h2><span id="price"></span> Bitcoin</h2>
+        </div>
+        <!-- Convert / Submit Button-->
+        <button type="submit" id="convert-btn">Convert</button>
+      </form>
+    </main>
+    <!-- JS -->
+
+    <script src="app.js"></script>
+  </body>
 </html>
